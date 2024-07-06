@@ -3,15 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.1</version>
+		<groupId>com.kafka</groupId>
+		<artifactId>SpringBootForKafka</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.kafka</groupId>
-	<artifactId>SpringBootForKafka</artifactId>
+	<groupId>com.kafka.providor</groupId>
+	<artifactId>SpringBootProvider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootForKafka</name>
-	<description>spring Boot For Apache Kafka</description>
+	<name>SpringBootProvider</name>
+	<description>spring Boot Provider</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -25,38 +25,18 @@
 		<tag/>
 		<url/>
 	</scm>
-
-	<packaging>pom</packaging>
-	<modules>
-		<module>SpringBootProvider</module>
-	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
