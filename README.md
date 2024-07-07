@@ -1,6 +1,17 @@
 # kafka-Spring-boot
 
-## Execute Kafka
+This is a spring boot application consisting of two microservices, producer and consumer.
+
+In the Producer microservice, we create a topic called "kafkaExampleTopic" just a series of configurations that help us to quickly and efficiently process the messages that arrive to our cluster.
+
+In the Consumer, it is in charge of listening and receiving the messages emitted by the producer and displaying them through the logger.
+
+<img src="./assets/kafka-app.png" alt="Kafka Spring boot APP" width="500" />
+
+As we can see in the figure, we have two consumers that listen to and read the producer's messages.
+
+
+# Execute Kafka
 ```bash
 docker-compose up -d
 ```
@@ -8,6 +19,11 @@ docker-compose up -d
 ```
 docker ps | grep kafka-container | awk '{print $1}'
 ```
+We ejecute this command to run kafka and zookeeper servers as docker containers using Docker-compose file.
+
+
+
+# Useful Commands
 
 ## Create topic into Kafka container
 ```bash
